@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 
 public class Oblig1 {
 
-
+// Her var main klassen
 
     public static int maks(int[] a){
         int temp = 0;
