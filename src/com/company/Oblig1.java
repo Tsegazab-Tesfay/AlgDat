@@ -7,6 +7,9 @@ public class Oblig1 {
 
 // Her var main klassen
 
+///////////// Oppgave 1
+    
+    
     public static int maks(int[] a){
         int temp = 0;
         if (a.length < 1){
@@ -41,5 +44,89 @@ public class Oblig1 {
         }
         return bytting;
     }
+    
+    
+  //////////
+
+ ////////// Opggave2
+    
+    
+     public static int antallUlikeSortert(int[] a){
+
+       int antallUlike= 0;
+       int counter=1;
+         
+
+       for (int i = 0; i < a.length - 1; i++) {
+           
+           if (a[i] > a[i + 1]) {
+               throw new IllegalStateException("Tabellen a er ikke sortert !");
+           } else if (a[i] != a[i + 1]) {
+               counter++;
+           }
+       }
+
+       if (a.length >= 1){
+           antallUlike=counter;
+       }
+
+       return antallUlike;
+   }
+
+  /////////////
+
+  ////////// Opggave3
+    
+    public static int antallUlikeUsortert(int[] a){
+
+        int antallUlike= 0;
+        int counter=1;
+
+        for (int i = 0; i < a.length - 1; i++) {
+            
+            if (a[i] != a[i + 1]) {
+                counter++;
+            }
+        }
+
+
+        if (a.length >= 1){
+            antallUlike=counter;
+        }
+
+        return antallUlike;
+    }
+
+
+    /////////////
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
+
+
+
