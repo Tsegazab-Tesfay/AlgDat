@@ -75,7 +75,7 @@ public class Oblig1 {
 
   /////////////
 
-    ////////// Opggave3
+    ////////// Opggave -->3 //////////////////////////////////////////
 
 
     public static int antallUlikeUsortert(int[] a) {
@@ -93,7 +93,7 @@ public class Oblig1 {
     }
 
 
-    //////////////// Oppgave 4///////////
+    //////////////// Oppgave -> 4 ///////////
     public static void delsortering(int[] a) {
         int temp = 0;
 
