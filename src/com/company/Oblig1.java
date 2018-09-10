@@ -75,30 +75,25 @@ public class Oblig1 {
 
   /////////////
 
-  ////////// Opggave3
-    
-    public static int antallUlikeUsortert(int[] a){
+    ////////// Opggave3
 
-        int antallUlike= 0;
-        int counter=1;
 
-        for (int i = 0; i < a.length - 1; i++) {
-            
-            if (a[i] != a[i + 1]) {
-                counter++;
+    public static int antallUlikeUsortert(int[] a) {
+        int antallUlikeUsortert = 0;
+
+        x:
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (a[i] == a[j])
+                    continue x ;
             }
+            antallUlikeUsortert++;
         }
-
-
-        if (a.length >= 1){
-            antallUlike=counter;
-        }
-
-        return antallUlike;
+        return antallUlikeUsortert;
     }
 
 
-    /////////////
+    ////////////////
     
     
     
