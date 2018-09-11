@@ -121,7 +121,7 @@ public class Oblig1 {
         }
     }
     
-    ///////////
+    /////////// Opgave 5
         public static void rotasjon(char[] a){
 
         char temp = 0;
