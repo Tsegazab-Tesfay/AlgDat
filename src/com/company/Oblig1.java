@@ -139,6 +139,47 @@ public class Oblig1 {
             System.out.println(Arrays.toString(a));
     }
     
+    ////////////////////////////////////Oppgave-6
+    
+        public static void rotasjon(char[] a){
+
+        char temp = 0;
+
+        int last = a.length-1;
+        //System.out.print(Arrays.toString(a));
+        //System.out.println();
+        if (a.length == 0 || a.length == 1){
+        }else
+            for (int i = 0; i< a.length;i++){
+
+                temp = a[i];
+                a[i] = a[last];
+                a[last] = temp;
+                //System.out.print(a[i] + " ");
+            }
+        System.out.println(Arrays.toString(a));
+    }
+
+
+    public static void rotasjon(char[] a, int k) {
+        char temp = 0;
+        int last = a.length - 1;
+
+        if (a.length == 0 || a.length == 1) {
+
+        } else if (k < 0 && k !=0) {
+            for (int i = 0; i < k; i--) {
+                rotasjon(a);
+            }
+            //System.out.println("2 " + Arrays.toString(a));
+        } else if (k >= 0 && k!= 0) {
+            for (int i = 1; i < k; i++) {
+                rotasjon(a);
+            }
+            //System.out.println("4 " + Arrays.toString(a));
+        }
+    }
+    
     
     
     
