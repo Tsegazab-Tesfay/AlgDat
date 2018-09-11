@@ -122,6 +122,22 @@ public class Oblig1 {
     }
     
     ///////////
+        public static void rotasjon(char[] a){
+
+        char temp = 0;
+        int last = a.length-1;
+        if (a.length == 0 || a.length == 1){
+
+        }else
+
+            for (int i = 0; i< a.length;i++){
+
+                temp = a[i];
+                a[i] = a[last];
+                a[last] = temp;
+            }
+            System.out.println(Arrays.toString(a));
+    }
     
     
     
