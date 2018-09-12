@@ -180,6 +180,48 @@ public class Oblig1 {
         }
     }
     
+  /////////7/ for bredet oppgave 6
+       
+         public static void rotasjon(char[] a) {
+
+        if (a.length > 1) {
+            char temp = a[a.length - 1];
+            for (int i = a.length - 1; i > 0; i--) {
+                a[i] = a[i - 1];
+            }
+            a[0] = temp;
+        }
+    }
+
+
+
+    public static void rotasjonleft(char[] a) {
+
+        if (a.length > 1) {
+            char temp = a[0];
+            for (int i = 0; i < a.length-1; i++) {
+                a[i] = a[i +1];
+            }
+            a[a.length-1] = temp;
+        }
+    }
+
+
+
+
+
+    public static void rotasjon(char[] a, int k) {
+
+        int x = Math.abs(k);
+        
+        for (int j = 0; j < x; j++){
+            if (k<0){
+                rotasjonleft(a);
+            }else {
+                rotasjon(a);
+            }
+        }
+    }
     
     
     
