@@ -219,26 +219,29 @@ public class Oblig1 {
         }
     }
     
- /// ////////////////////// Oppgave 7.A //////////////////////////////
-    
-    
-        public static void rotasjon(char[] a){
+ /////Oppgave 7.A
 
-        char temp = 0;
+    public static String flett(String s, String t){
 
-        int last = a.length-1;
-        //System.out.print(Arrays.toString(a));
-        //System.out.println();
-        if (a.length == 0 || a.length == 1){
-        }else
-            for (int i = 0; i< a.length;i++){
 
-                temp = a[i];
-                a[i] = a[last];
-                a[last] = temp;
-                //System.out.print(a[i] + " ");
-            }
-        //System.out.println(Arrays.toString(a));
+        // toCharArray ble brukt til å konverter String to char array.
+        char[] A = s.toCharArray();
+        char[] B = t.toCharArray();
+
+        char[] C = new char[A.length + B.length];
+        int i= 0, j = 0, k = 0;
+
+        while (i < A.length && j < B.length){
+            C[k++] = A[i++];
+            C[k++] = B[j++];
+        }
+        while (i < A.length) C[k++] = A[i++];
+        while (j < B.length) C[k++] = B[j++];
+
+        // "String.valueof" ble brukt til å konvertere char array to String
+
+        return String.valueOf(C);
+
     }
     
  /// ////////////////////// Oppgave 7.B //////////////////////////////
