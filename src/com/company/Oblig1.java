@@ -364,6 +364,37 @@ public class Oblig1 {
     }
     
     
+    /////////////////////////  Oppgave 10
+
+    public  static boolean inneholdt(String  a,  String  b){
+
+       char[]c = b.toCharArray();
+       int x = 0;
+
+
+
+
+        boolean inneholdt= false;
+x:
+        for (int i =0; i< a.length();i++){
+            for (int j =0; j< c.length;j++){
+                if (a.charAt(i)==c[j]){
+                    c[j]='-';
+                    x++;
+                    continue x;
+                }
+            }
+        }
+
+        if(x== a.length()){
+            inneholdt=true;
+        }
+
+
+        return inneholdt;
+    }
+    
+    
    
     
     
