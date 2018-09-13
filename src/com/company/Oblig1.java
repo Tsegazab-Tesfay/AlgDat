@@ -218,6 +218,25 @@ public class Oblig1 {
             }
         }
     }
+    /// ////////////////////// Oppgave 7.A //////////////////////////////
+        public static void rotasjon(char[] a){
+
+        char temp = 0;
+
+        int last = a.length-1;
+        //System.out.print(Arrays.toString(a));
+        //System.out.println();
+        if (a.length == 0 || a.length == 1){
+        }else
+            for (int i = 0; i< a.length;i++){
+
+                temp = a[i];
+                a[i] = a[last];
+                a[last] = temp;
+                //System.out.print(a[i] + " ");
+            }
+        //System.out.println(Arrays.toString(a));
+    }
     
     //     ////////Oppgave 8//////////////////////////////////
 
@@ -256,19 +275,14 @@ public class Oblig1 {
 
     public static int[] tredjeMin(int[] a) // ny versjon
      {
-
-
          if (a.length < 3) {
              throw new java.util.NoSuchElementException("Tabellen a er tom!");
          }
-
 
         int b[] = new int[3];
         System.arraycopy(a, 0, b, 0, 3);
 
         int c[] = indekssortering(b);
-
-
 
 
         int m = c[0];
