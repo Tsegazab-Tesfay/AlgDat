@@ -249,6 +249,76 @@ public class Oblig1 {
     }
     
     
+    
+////////////////////////
+
+/////////////////////////  Oppgave 9
+
+    public static int[] tredjeMin(int[] a) // ny versjon
+     {
+
+
+         if (a.length < 3) {
+             throw new java.util.NoSuchElementException("Tabellen a er tom!");
+         }
+
+
+        int b[] = new int[3];
+        System.arraycopy(a, 0, b, 0, 3);
+
+        int c[] = indekssortering(b);
+
+
+
+
+        int m = c[0];
+        int nm = c[1];
+        int tm = c[2];
+
+
+
+        int minverdi = a[m];
+        int nestminsverdi = a[nm];
+        int tredjeminverdi = a[tm];
+
+
+
+        for (int i = 3; i < a.length; i++)
+        {
+                
+
+            if (a[i] < minverdi)
+            {
+                tm = nm;
+                tredjeminverdi = nestminsverdi;
+
+                nm = m;
+                nestminsverdi = minverdi;
+
+                m = i;
+                minverdi = a[i];
+            }
+
+                
+            else if (a[i] < nestminsverdi)
+            {
+                tm = nm;
+                tredjeminverdi = nestminsverdi;
+                nm = i;
+                nestminsverdi = a[i];
+            }
+
+            else if (a[i] < tredjeminverdi)
+                tm= i;
+                tredjeminverdi = a[tm];
+        }
+
+        return new int[]{m, nm, tm};
+
+
+    }
+    
+    
    
     
     
