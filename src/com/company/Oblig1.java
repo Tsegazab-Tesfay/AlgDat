@@ -206,10 +206,6 @@ public class Oblig1 {
         }
     }
 
-
-
-
-
     public static void rotasjon(char[] a, int k) {
 
         int x = Math.abs(k);
@@ -223,27 +219,37 @@ public class Oblig1 {
         }
     }
     
+    //     ////////Oppgave 8//////////////////////////////////
+
+
+    public static int[] indekssortering(int[]  a){
+        int temp = 0;
+        int[] b = Arrays.copyOfRange(a,0,a.length);
+        int[] sortertindex = new int[a.length];
+        //System.arraycopy(a,0, b,a.length,a.length);
+
+
+        for (int i =0; i<b.length-1; i++){
+            for (int j = 1; j < b.length ; j++){
+                if (b[j-1] > b[j]) {
+                    temp = b[j-1];
+                    b[j-1] = b[j];
+                    b[j] = temp;
+                }
+            }
+        }
+         for (int i = 0; i< a.length; i++){
+             for (int j = 0; j< a.length ; j++){
+                 if (b[i] == a[j]){
+                     sortertindex[i] = j;
+                 }
+             }
+         }
+         return sortertindex;
+    }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
     
     
