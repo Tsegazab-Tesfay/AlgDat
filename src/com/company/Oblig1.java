@@ -218,7 +218,10 @@ public class Oblig1 {
             }
         }
     }
-    /// ////////////////////// Oppgave 7.A //////////////////////////////
+    
+ /// ////////////////////// Oppgave 7.A //////////////////////////////
+    
+    
         public static void rotasjon(char[] a){
 
         char temp = 0;
@@ -237,6 +240,34 @@ public class Oblig1 {
             }
         //System.out.println(Arrays.toString(a));
     }
+    
+ /// ////////////////////// Oppgave 7.B //////////////////////////////
+    
+     public static String flett(String... s){
+
+        String a ="";
+        int maxLength = 0;
+
+        for (int h=0; h < s.length ;h++)    //length of longest string
+            if ( s[h].length() > maxLength) {
+                maxLength = s[h].length();
+            }
+
+
+
+        for (int j = 0; j < maxLength; j++) {   // loops char in string
+         for (int i=0; i < s.length ;i++) {  //loops strings in parameter
+           if (s[i].length() <= j) {
+               continue;                      //breaks off when string is traversed
+           }
+              // System.out.print(s[i].charAt(j));
+               a += s[i].charAt(j);
+           }
+        }
+       return a;
+    }
+
+   
     
     //     ////////Oppgave 8//////////////////////////////////
 
