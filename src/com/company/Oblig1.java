@@ -398,6 +398,15 @@ x:
     }
     
     
+    Oppgave 4: l) Metoden gjør feil for negative verdier!
+    Oppgave 6: i) Metoden er for ineffektiv. Må forbedres!
+    Oppgave 6: j) Metoden er for ineffektiv. Må forbedres!
+    Oppgave 6: k) Metoden er for ineffektiv. Må forbedres!
+    Oppgave 6: l) Metoden er for ineffektiv. Må forbedres!
+    Oppgave 10: n) Dette (1757 ms) gikk sakte! Finn en bedre algoritme!
+    Må forbedres! Du har minst 6 feil eller svakheter!
+    
+    
    
     
     
